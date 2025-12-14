@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elder Care Request</title>
+</head>
+<body>
+    <h2>Submit a Help Request</h2>
+    <form action="submit_request.php" method="POST">
+        Name: <input type="text" name="name" required><br>
+        Age: <input type="number" name="age" required><br>
+        Gender: 
+        <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select><br>
+        Contact Number: <input type="text" name="contact" required><br>
+        Email: <input type="email" name="email"><br>
+        Address: <textarea name="address" required></textarea><br>
+        Type of Help: <input type="text" name="help_type" required><br>
+        Description: <textarea name="description"></textarea><br><br>
+        <input type="submit" value="Submit Request">
+    </form>
+</body>
+</html>

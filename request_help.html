@@ -1,0 +1,87 @@
+<!-- Registration Inputs -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Elderly Care Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Request Help - Elderly Care Platform</h1>
+
+
+    </header>
+
+    <nav>
+    <a href="index.html">Home</a> |
+    <a href="register.html">Register</a> |
+    <a href="request_help.html">Request Help</a> |
+    <a href="services.html">Services</a> |
+    <a href="volunteers.html">Volunteers</a>
+  </nav>
+  
+<main class="form-container">
+  <form id="requst help" action="request_help.php" method="POST">
+            <div class="form-group">
+            <img src="C:\Users\muthu\Downloads\download 6.jpg" alt="Request Help"
+</div>
+
+    
+<div class="form group">
+  <label for="fullName" class="block mb-2 text-sm font-medium">Full Name:</label>
+  <input type="text" id="fullName" name="fullName" required
+    class="w-full border border-gray-300 rounded-md p-3 focus:ring-blue-500 focus:outline-none"
+    placeholder="e.g., Muthu" />
+</div>
+  
+<div>
+  <label for="age" class="block mb-2 text-sm font-medium">Age:</label>
+  <input type="number" id="age" name="age" required min="1" max="120"
+    class="w-full border border-gray-300 rounded-md p-3 focus:ring-blue-500 focus:outline-none"
+    placeholder="e.g., 65" />
+</div>
+
+<div>
+  <label for="gender" class="block mb-2 text-sm font-medium">Gender:</label>
+  <select id="gender" name="gender" required
+    class="w-full border border-gray-300 rounded-md p-3 focus:ring-blue-500 focus:outline-none">
+    <option value="">--Select--</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
+</div>
+
+<div>
+  <label for="email" class="block mb-2 text-sm font-medium">Email Address:</label>
+  <input type="email" id="email" name="email" required
+    class="w-full border border-gray-300 rounded-md p-3 focus:ring-blue-500 focus:outline-none"
+    placeholder="e.g., Muthu@example.com" />
+</div>
+
+<div>
+  <label for="phone" class="block mb-2 text-sm font-medium">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"
+    class="w-full border border-gray-300 rounded-md p-3 focus:ring-blue-500 focus:outline-none"
+    placeholder="e.g., 9876543210" />
+</div>
+  <label for="Description" class="block mb-2 text-sm font-medium">Description:</label>
+  <input type="tel" id="Description " name="Description" required pattern
+    class="w-full border border-gray-300 rounded-md p-3 focus:ring-blue-500 focus:outline-none"
+    placeholder="e.g., our problem" />
+    
+</div>
+<button type="submit"
+          class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-md transition">
+          Submit Request
+        </button>
+      </form>
+    </div>
+   </form>
+</main>
+<footer>
+   <script src="request_help.js"></script>
+        <p>Elderly Care Platform. All rights reserved.</p>
+    </footer>
